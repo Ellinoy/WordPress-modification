@@ -15,6 +15,9 @@
  * @package reboot
  */
 
+// здесь мы взяли стандартный header и модифицировали его небольшим кусочкам кода, к которому будет стоять комментарий
+
+
 global $wpshop_core;
 global $class_advertising;
 
@@ -73,7 +76,7 @@ _tmr.push({id: "3171000", type: "pageView", start: (new Date()).getTime()});
 
     <?php do_action( THEME_SLUG . '_before_site_content' ) ?>
 	
-	<?php
+	<?php  						 //вот этот участок кода был дописан, чтобы вызвать созданный файл с таблицей и данными с другого сайта
 	if ( is_front_page() || is_home() ) {
 		require_once("turkish.php");
 	echo write_results();

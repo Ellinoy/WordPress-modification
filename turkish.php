@@ -2,7 +2,7 @@
 	
      function getdata()
     {
-$realdata = file_get_contents("https://covid19.saglik.gov.tr/?lang=tr-TR"); //забираем с сайта, куда ежедневно выкладываются данные код
+$realdata = file_get_contents("https://covid19.saglik.gov.tr/?lang=tr-TR"); //забираем с сайта, куда ежедневно выкладываются данные, код этого сайта
 
         $testMadeOverall = $realdata; //показывает сколько всего тестов за все время
         $pos = strpos($testMadeOverall, '<span class="">');
